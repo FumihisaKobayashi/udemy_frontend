@@ -1,0 +1,14 @@
+@import url(sanitize.css);
+/*css上で無害化（書式リセット）*/
+
+
+/* 見出しの調整 */
+h1{
+ font-size: 24px;
+ margin: 0px;
+}
+
+/*本文の調整*/
+p{
+ font-size: 14px;
+}
