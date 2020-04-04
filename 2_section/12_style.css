@@ -1,0 +1,15 @@
+@import url(sanitize.css);
+
+/* 見出しの調整 */
+
+h1{
+ font-size: 24px;
+ margin: 0px;
+}
+
+/*　クラス属性の選択（背景）指定の範囲内div他に.前がなければ省略可能*/
+div.content{
+  background-color: #fcc;
+  width: 600px;
+
+}
