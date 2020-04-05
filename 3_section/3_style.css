@@ -1,0 +1,9 @@
+
+h1{
+    margin: 0;
+    font-size: 24px;
+    /*weightは、文字の太さの設定。今回は、太字をやめている*/
+    font-weight: normal;
+    /*テキストをセンターに持ってく。*/
+    text-align: center;
+}
