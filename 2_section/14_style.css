@@ -1,0 +1,20 @@
+@import url(sanitize.css);
+
+/* 見出しの調整 */
+
+h1{
+ font-size: 24px;
+ margin: 0px;
+}
+
+div.content{
+  background-color: #fff;
+  width: 600px;
+  /*margin 指定する数に応じて、対照も変わるので注意(上下左右)*/
+  margin: 10px auto;
+  border: 1px solid #d1d1d1;
+  /*borderは、枠線solid(実線)+色指定*/
+  padding: 30px;
+  /*枠はそのまま中身を動かす（中央よせ。）*/
+}
+/*autoは良い感じに揃えてという意味合いの指定。*/
