@@ -1,0 +1,15 @@
+@import url(sanitize.css);
+
+/* 見出しの調整 */
+
+h1{
+ font-size: 24px;
+ margin: 0px;
+}
+
+div.content{
+  background-color: rgba(255, 255, 0.8);
+  /*rgbにて三原色の色合い設定。純粋にredなどと入力してもOKrgba最後.は透明度せっていできる*/
+  width: 600px;
+
+}
