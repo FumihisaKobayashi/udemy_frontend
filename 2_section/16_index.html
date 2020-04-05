@@ -1,0 +1,22 @@
+<body>
+    <!--フォーム画面-->
+    <div class="content">
+        <h1>入会申込み</h1>
+        <p>入会するには、次のフォームに必要事項をご記入ください。</p>
+        <!--段落一括りでなく、一つの設定-->
+        <div class="control">
+            <label for="mymail">メールアドレス<span class="required">必須</span></label>
+            <input id="email" name="mymail">
+            <!--id属性は、その要素を示す。印をつける。-->
+        </div>
+
+        <div>
+            <label for="password">パスワード<span class="required">必須</span></label>
+            <input id="password" name="passcord">
+            <!--passwordというものでラベルとの紐付け。labelとテキストの関連づけ。-->
+        </div>
+        <div class="control">
+            <button type="submit">登録する</button>
+        </div>
+    </div>
+</body>
