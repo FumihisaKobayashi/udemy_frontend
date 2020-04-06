@@ -1,0 +1,19 @@
+
+/*infoのなかのh1*/
+.information h1{
+    font-size: 18px;
+    margin: 0 10px 10px 0;
+    /*上下左右の順で指定*/
+    float: left;
+    /*float 寄せる*/
+}
+/*infoのなかのlassのなかのtypeを指定*/
+.information .type{
+    background-color: #e35ae3;
+    display: inline;
+    /*全部指定されてしまうので文字の中のみ指定　（inline）*/
+    padding: 3px 5px;
+    font-size: 80%;
+    color: #fff;
+}
+
