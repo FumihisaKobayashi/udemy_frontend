@@ -1,0 +1,6 @@
+/*指定の拡張*/
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
