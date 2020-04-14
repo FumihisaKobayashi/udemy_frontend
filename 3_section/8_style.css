@@ -1,0 +1,13 @@
+/*WEB font googlefontにて参照すると無料*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+header h1{
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    font-family: 'Sriracha', cursive;;
+}
+
+/*状況に使い分けてデザインの幅を広く*/
