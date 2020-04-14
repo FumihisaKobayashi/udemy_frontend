@@ -1,0 +1,21 @@
+
+.description img {
+    float: left;
+    margin: 0 10px 10px 0;
+    /*アニメーションの対象を決定*/
+    transition-property: opacity;
+    /*何秒かけて行うか*/
+    transition-duration: 1s;
+    /*演出最初と最後が少し遅くなる*/
+    transition-timing-function: ease;
+    /*何秒遅らせるか*/
+    transition-delay: 0s;
+    }
+
+    /*擬似要素　マウスカーソルを合わせたときに*/
+    .description img:hover{
+        opacity: .5;
+    /*透明度*/
+    }
+
+    
