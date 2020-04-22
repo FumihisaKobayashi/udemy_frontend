@@ -1,0 +1,7 @@
+/*sanitizeでやっていたものを投入*/
+h1{
+    font-size: 18px;
+    font-weight: bold;
+    /*自動でやっていた所*/
+    margin: 0;
+}
