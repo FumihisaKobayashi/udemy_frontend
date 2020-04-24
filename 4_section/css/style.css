@@ -14,3 +14,7 @@ h1{
     font-weight: bold;
     margin: 0;
 }
+
+.allign-right{
+    text-align: right;
+}
