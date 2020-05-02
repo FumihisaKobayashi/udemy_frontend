@@ -1,0 +1,11 @@
+/*スマホサイズになった際に種式変わってしまう縦に*/
+
+@media only screen and (max-width: 992px){
+    .radio-inline{
+        display: block;
+        /*後の記述が優先的ようだが、複雑な設定でうまく対処できない時(詳細度)にimportant使う(最後の手段)googleのデベロッパーで確認する*/
+        margin: 0 !important;
+        /*blockにすることによって１行ずつ確保できるようになる*/
+    }
+}
+/*display-inlineにすると横並びになる１行におさまる*/
