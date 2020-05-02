@@ -1,0 +1,44 @@
+<div class="form-group">
+    <label>知りたい内容(複数回答可)</label>
+    <div class="checkbox">
+        <!--checknoxの場合はlabelで囲むと文字をクリックしても選択できる-->
+        <label><!--forで一個ずつ入力するのと同じ-->
+            <input type="checkbox" name="q1" value="html">
+            html
+        </label>
+    </div>
+</div>
+
+
+
+<!--一個ずつラベルで囲う方法-->
+<label for="q1_html">html</label>
+
+
+<!--複数含めた完成形-->
+
+<div class="form-group">
+    <label>知りたい内容(複数回答可)</label>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" name="q1" value="html">
+            html
+        </label>
+
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" name="q1" value="css">
+            css
+        </label>
+    </div>
+
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" name="q1" value="javascript">
+            javascript
+        </label>
+    </div>
+
+    <!--nameを変えるの注意-->
+    <!--q1は同じままでOK-->
