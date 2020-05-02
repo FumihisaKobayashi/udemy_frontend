@@ -18,3 +18,11 @@ h1{
 .allign-right{
     text-align: right;
 }
+
+@media only screen and (max-width: 992px){
+    .radio-inline{
+        display: block;
+        margin: 0 !important;
+        /*後の記述が優先的ようだが、複雑な設定でうまく対処できない時にimportant使う(最後の手段)googleのデベロッパーで確認する*/
+    }
+}
