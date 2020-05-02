@@ -1,8 +1,10 @@
-ドロップダウンリスト
+ドロップダウンリスト(十個以上選択肢がある場合)
+*デメリットとして、選択肢はわかりづらい。（開けてみないとわからない）
 
 <div class="form-group">
     <label for="job">ご職業</label>
-    <select id="job" name="job" class="form-control">
+    <!--multipleはスマホだと見づらいので複数選択は最近は使わない-->
+    <select id="job" name="job" class="form-control"size="3" multiple>
         <!--value属性と選択肢を一緒にしなくても良い-->
         <option value="">選択して下さい</option>
         <!--最初に空で属性選択をするのが一般的-->
