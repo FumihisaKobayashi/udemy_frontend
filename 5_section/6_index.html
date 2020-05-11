@@ -1,0 +1,20 @@
+
+<script>
+    //変数に対して[newを使ってDateオブジェクトを作る。=インスタンス（実体）という]
+    var today = new Date();
+    //documentというオブジェクトの.write
+    document.write('<p>今日は、' + today.getDate() + '日です</p>');
+    //インスタンス化したものを使わなければならない
+    
+
+    //年でもできるオブジェクトによって変えられる。
+    var newYear = new Date(2019,1,1);
+    document.write('<p>元旦は、' + newYear.getDate() + 'です。</p>');
+
+    //基本的にはオブジェクトをインスタンスかして設定する。例外もある
+
+    document.write(Math.abs(-10));
+    //Math のオブジェクトなどに関してはインスタンスかする必要はない
+
+
+</script>
