@@ -1,0 +1,19 @@
+日付の表示
+
+いろいろなメソッドがあるので、要勉強
+
+今回は、.getFullYear(年) + .getMonth＋１(月) + .getDate(日付)の３つ
+
+
+
+ <script>
+    var today = new Date();
+    var todayHtml = today.getFullYear() + '/' + (today.getMonth()+1) + '/' + today.getDate();
+
+    document.write('<p class="date">' + todayHtml + '</p>');
+
+
+    /*※注意　getMonthは、そのまま使うと０から数えてしまうので、一月前で表記されてしまう。
+    そのため、月を表記させたい場合は、＋１を忘れない。*/
+    
+</script>
