@@ -1,0 +1,17 @@
+秒を取得し、表記する
+
+ <script>
+    var now = new Date();
+    var seconds = now.getSeconds();//秒を取得する
+    
+    //秒が１０未満のときに以下のプログラムが実行される。
+    if(seconds < 10) {
+        //0秒から九秒までの間だけズレをなくすために一桁の時に０を表記させたい。
+        seconds = '0' + seconds;
+    }
+    
+    
+    document.getElementById('timer').innerHTML = seconds;
+    
+    
+</script>
