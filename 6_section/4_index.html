@@ -1,0 +1,54 @@
+関数　＝　function
+
+var addZero = function(value){
+
+
+    return valu;
+}
+
+これで覚える
+
+
+<script>
+    //0を追加する
+
+    //定義しているfunctionに関して、決めて代入していく
+
+    var addZero = function(value){
+
+        if(value < 10) {
+        value = '0' + value;
+        }
+        //変数に代入されるとその結果を代入できる（返り値・戻り値=結果）
+        return value;
+    }
+
+    var now = new Date();
+
+    var seconds = now.getSeconds();//秒を取得
+    seconds = addZero(seconds);
+
+
+</script>
+
+
+
+パターン２パラメーターを増やす
+<script>
+    //パラーめーたには複数設定できるが、戻り値は１つしか設定できない。
+    var addZero = function(value, param2, param3){
+
+        if(value < 10) {
+        value = '0' + value;
+        }
+        
+        return value;
+    }
+
+    var now = new Date();
+
+    var seconds = now.getSeconds();//秒を取得
+    seconds = addZero(seconds,123, 'ABC', '...');
+
+
+</script>
