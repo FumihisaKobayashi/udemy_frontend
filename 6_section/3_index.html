@@ -1,0 +1,31 @@
+
+
+<script>
+    //0を追加する
+    var addZero = function(value){
+        
+    }
+
+    var now = new Date();
+    var seconds = now.getSeconds();//秒を取得
+    
+    if(seconds < 10) {
+        //0秒から九秒までの間だけ
+        seconds = '0' + seconds;
+    }
+
+    var minutes = now.getMinutes();//分を取得
+    if(minutes < 10){
+        minutes = '0' + minutes;
+
+    }
+
+    var hours = now.getHours();//時を取得
+    if(hours < 10){
+        hours = '0' + hours;
+    }
+    //時分秒　表記させる。
+    document.getElementById('timer').innerHTML =hours + ':' + minutes + ':' + seconds;
+
+    
+</script>
