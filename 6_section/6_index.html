@@ -1,0 +1,23 @@
+setInterval　間隔を開ける。　単位：ミリ秒＝1/1000秒
+間隔ごとにgoTimerを実行する。画面上を動き続ける動作を作ったりすることができる
+
+window(全体)でもプログラムできる
+docment(部分)
+
+
+<script>
+    document.getElementById('start_stop').addEventListener('click', function(){
+        var start = new Date();
+
+        //setinterval 感覚を開けて実行する。
+        setInterval(goTimer, 10);
+        //10ミリ秒ごとにgoTimerを使わせる。
+    });
+
+    var goTimer = function(){
+        var now = new Date();
+        
+        document.getElementById('timer').innerHTML = now.getTime();
+    }
+    
+</script>
