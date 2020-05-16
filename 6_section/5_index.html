@@ -1,0 +1,28 @@
+何かをしたら:イベント/イベントドリブンプログラム
+
+
+<!--document.getElementById('AAA').addEventListener('click', function()-->
+
+<script>
+    //'start_stop'が作動した時に何回でもプログラムを実行する。
+    document.getElementById('start_stop').addEventListener('click', function(){//無名関数:下部分のプログラム実行
+        //addEventListeberは、二つのパラメーターが必要１、種類(click)２つ目(されたときのプログラム)
+            
+        var now = new Date();
+
+        var seconds = now.getSeconds();//秒を取得
+        seconds = addZero(seconds);
+
+        var minutes = now.getMinutes();//分を取得
+        minutes = addZero(minutes);
+
+        var hours = now.getHours();//時を取得
+        hours = addZero(hours);
+
+
+        document.getElementById('timer').innerHTML =hours + ':' + minutes + ':' + seconds;
+    });
+
+</script>
+
+addEventListenerは、CLICKだけでなくマウス動かした時など、様々なパラメータがある。
