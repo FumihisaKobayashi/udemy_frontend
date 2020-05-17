@@ -1,0 +1,18 @@
+
+<script>
+
+    var goTimer = function(){
+        var now = new Date();
+
+        //まず、var milliで、計算しやすいように差を計算する今からスタートの計算の式を組み立て
+        var milli = now.getTime() - start.getTime();
+
+        var seconds = Math.floor(milli / 1000);
+        //Math.florr(小数点以下切り捨て + 1000で割ることで、秒数の表記)
+
+
+        document.getElementById('timer').innerHTML = seconds;
+                    
+    }
+                
+</script>
