@@ -1,0 +1,21 @@
+
+
+<script>
+    var start;//グローバル変数
+
+    document.getElementById('start_stop').addEventListener('click', function(){
+        start = new Date(); //グローバル変数を指定したことによってvar start表記していたものを省略可能
+
+        //setinterval 間隔を開けて実行する。
+        setInterval(goTimer, 10);
+    });
+    
+
+    var goTimer = function(){
+        var now = new Date();
+        //TIMERに動きがあった時,今の時間から始めた時間を引いたものを表示.
+        document.getElementById('timer').innerHTML = now.getTime() - start.getTime();
+        
+    }
+    
+</script>
