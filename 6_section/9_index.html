@@ -1,0 +1,33 @@
+
+<script>
+    //位が⑩以下の時数字の前にゼロを追加する
+    var addZero = function(value){
+        if (value < 10){
+            value = '0' + value;
+        }
+        return value;
+    }
+
+    var goTimer = function(){
+        var now = new Date();
+
+        var milli = now.getTime() - start.getTime();
+        var seconds = Math.floor(milli / 1000);
+
+        var minutes = Math.floor(seconds / 60);//６０で割ることで分数として表記
+        var hours = Math.floor(minutes / 60);//分を同じく悪ことで、また表記
+
+        //このままだと六十秒超えてもカウントし続けるため下記にて、改善
+        
+        seconds = seconds - minutes * 60;//秒から-分*60することで、桁数を揃えることができる。
+        minutes = minutes - hours * 60;
+
+        hours = addZero(hours);//functionの代入
+        minutes = addZero(minutes);
+        seconds = addZero(seconds);
+
+
+        document.getElementById('timer').innerHTML = hours + ':' + minutes + ':' + seconds;
+        
+    }
+</script>
