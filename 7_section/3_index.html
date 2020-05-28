@@ -1,0 +1,26 @@
+
+<script>
+    var images = [
+        {
+            "path": "img/img01.jpg",
+            "name": "name01",
+            "caption": "コメント1"
+        },
+
+        {
+            "path": "img/img02.jpg",
+            "name": "name02",
+            "caption": "コメント2"
+        }
+    ];
+
+    var img;
+    img = document.createElement('img');
+    img.setAttribute('src', images[0].path);
+    //path追加
+    //<img src="img/img01.jpg"
+
+    //子要素を追加する
+    document.getElementById('img_unit').appendChild(img);
+
+</script>
