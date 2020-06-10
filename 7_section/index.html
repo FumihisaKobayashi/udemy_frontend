@@ -34,6 +34,10 @@
     ajax.responseType = 'json';
     ajax.send(null);
     
+    ajax.onreadystatechange = function(){
+        alert(ajax.readyState);
+
+    }
 
 </script>
 
