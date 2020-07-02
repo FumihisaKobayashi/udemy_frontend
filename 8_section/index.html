@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <title>MY Photos</title>
+</head>
+<body>
+    <header>
+        <h1>MY Photos</h1>
+    </header>
+    <div class="container">
+        <div id="img_unit">
+        </div>
+    </div>
+
+    <script>
+        $("#img_unit").html('ここに、画像リストが表示されます。');
+        $("#img_unit").css('margin-top', '100px');
+        $("#img_unit").on('click', () => {
+            $("#img_unit").html('お前クリックしたやろ。');
+        });
+
+    </script>
+</body>
+
+</html>
+
